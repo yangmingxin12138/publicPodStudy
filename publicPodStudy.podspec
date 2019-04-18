@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "publicPodStudy"
-  spec.version      = "1.1.2"
+  spec.version      = "1.1.3"
   spec.summary      = "学习上传pod"
 
   # This description is used to generate tags and improve search results.
@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "publicPodStudy.swift"
-    # spec.exclude_files = "Classes/Exclude"
+     spec.exclude_files = "publicPodStudy.swift"
 
   # spec.public_header_files = "Classes/**/*.h"
 
