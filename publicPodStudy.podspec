@@ -91,8 +91,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "publicPodStudy.swift"
-     spec.exclude_files = "publicPodStudy.swift"
+    spec.source_files  = "*.swift"
+    #spec.exclude_files = "publicPodStudy.swift"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -136,5 +136,14 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+
+    spec.subspec 'shop' do |s|
+        s.vendored_frameworks = "Carthage/Build/iOS/{Moya, Alamofire, Result}.framework"
+    end
+
+
+    spec.subspec 'tuhu' do |s|
+        s.dependency 'Moya'
+    end
 
 end
