@@ -138,7 +138,7 @@ Pod::Spec.new do |spec|
   # spec.dependency "JSONKit", "~> 1.4"
 
     spec.subspec 'shop' do |s|
-        s.vendored_frameworks = "Carthage/Build/iOS/{Moya, Alamofire, Result}.framework"
+        s.vendored_frameworks = "Carthage/Build/iOS/{Alamofire,Moya, Result}.framework"
     end
 
 
