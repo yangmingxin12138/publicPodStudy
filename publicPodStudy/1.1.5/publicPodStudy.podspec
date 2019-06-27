@@ -24,5 +24,8 @@ spec.source_files  = "*.swift"
 
 spec.requires_arc = true
 spec.frameworks = "UIKit" #支持的框架
+spec.dependency "BaiduMapKit", "3.4.2"
+spec.libraries = "sqlite3.0", "c++"
+#spec.vendored_libraries = "*.a"
 
 end
